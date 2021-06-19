@@ -1,3 +1,5 @@
+<html>
+<style>
 @import "compass/css3";
 
 @import "compass/css3";
@@ -87,3 +89,35 @@ body.sticky-header{
 		}
 	}
 }
+
+</sytyle>
+$(function(){
+  $(window).scroll(function(){
+    var winTop = $(window).scrollTop();
+    if(winTop >= 30){
+      $("body").addClass("sticky-header");
+    }else{
+      $("body").removeClass("sticky-header");
+    }//if-else
+  });//win func.
+});//ready func.
+<header>
+    <h1>Sticky Header Pow!</h1>
+    <nav>
+      <a href="">Home</a>
+      <a href="">About</a>
+      <a href="">Gallery</a>
+      <a href="">Contact</a>
+    </nav>
+  </header>
+  <div class="wrapper">
+
+    <section id='real'>
+      <h2> Keepin' it real</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim sunt delectus, reiciendis omnis laudantium animi, et nulla quidem, aliquam aliquid. A consectetur deleniti voluptates eius neque, voluptate voluptatibus nostrum!</p>
+
+
+    </section>
+  </div>
+</body>
+</html>
